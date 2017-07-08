@@ -59,7 +59,7 @@
     "OperatorEmail" : {
       "Description" : "Email address to notify if there are any operational issues",
       "Type" : "String",
-      "Default" : "hello@rohit.io"
+      "Default" : "techking1983@gmail.com"
     },
     "SSHLocation" : {
       "Description" : "SSH whitelisting CIDR block (default can be accessed from anywhere)",
@@ -347,7 +347,7 @@
 "                                                                                                                                                            \n",
 "# Configure the MyBB application.. - TODO                                                                                                                   \n",
 "cd /usr/src/                                                                                                                                                \n",
-"git clone https://github.com/rohit01/crossover.git                                                                                                          \n",
+"git clone https://github.com/uyuy2017/test                                                                                                          \n",
 "cd crossover/                                                                                                                                               \n",
 "bash ./install_mybb.sh ", { "Ref" : "DBName" }, " ", { "Ref" : "MyBbTablePrefix" }, " ", { "Fn::GetAtt" : ["DB", "Endpoint.Address"] }, " ", 
 { "Ref" : "DBUser" }," ", { "Ref" : "DBPassword" }, " ", { "Fn::GetAtt" : [ "PublicElasticLoadBalancer", "DNSName" ] }, "                                          \n",
